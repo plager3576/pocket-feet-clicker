@@ -11,13 +11,17 @@
 [node name="clicker" type="Node2D"]
 script = ExtResource("1_6swmv")
 
-[node name="3panie" type="Sprite2D" parent="."]
+[node name="GUI" type="Node2D" parent="."]
+
+[node name="Clickers" type="Node2D" parent="GUI"]
+
+[node name="3panie" type="Sprite2D" parent="GUI/Clickers"]
 visible = false
-position = Vector2(542, 999)
-scale = Vector2(0.271528, 0.271528)
+position = Vector2(540, 960)
+scale = Vector2(0.26, 0.26)
 texture = ExtResource("1_2qnix")
 
-[node name="Button" type="Button" parent="3panie"]
+[node name="Button" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = 483.0
 offset_top = 437.0
 offset_right = 1849.0
@@ -26,7 +30,7 @@ rotation = -0.261799
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button6" type="Button" parent="3panie"]
+[node name="Button6" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = 1473.14
 offset_top = 456.674
 offset_right = 1989.14
@@ -34,7 +38,7 @@ offset_bottom = 968.674
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button2" type="Button" parent="3panie"]
+[node name="Button2" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = -95.7543
 offset_top = 615.037
 offset_right = 1270.25
@@ -43,7 +47,7 @@ rotation = -0.785397
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button3" type="Button" parent="3panie"]
+[node name="Button3" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = -835.0
 offset_top = 1003.0
 offset_right = 465.0
@@ -52,7 +56,7 @@ rotation = -1.0472
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button4" type="Button" parent="3panie"]
+[node name="Button4" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = -1212.0
 offset_top = 780.0
 offset_right = -127.0
@@ -61,7 +65,7 @@ rotation = -1.0472
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button5" type="Button" parent="3panie"]
+[node name="Button5" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = -1896.67
 offset_top = -228.337
 offset_right = -811.672
@@ -69,13 +73,13 @@ offset_bottom = 254.663
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="zerotwo" type="Sprite2D" parent="."]
+[node name="zerotwo" type="Sprite2D" parent="GUI/Clickers"]
 visible = false
 position = Vector2(421, 1032)
-scale = Vector2(0.689236, 0.689236)
+scale = Vector2(0.65, 0.65)
 texture = ExtResource("3_cxfy8")
 
-[node name="Button5" type="Button" parent="zerotwo"]
+[node name="Button5" type="Button" parent="GUI/Clickers/zerotwo"]
 offset_left = -289.0
 offset_top = -149.0
 offset_right = -52.0
@@ -83,7 +87,7 @@ offset_bottom = 584.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button6" type="Button" parent="zerotwo"]
+[node name="Button6" type="Button" parent="GUI/Clickers/zerotwo"]
 offset_left = -599.0
 offset_top = -153.0
 offset_right = -268.0
@@ -92,13 +96,13 @@ rotation = -0.523598
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="duza stopa" type="Sprite2D" parent="GUI/Clickers"]
 visible = false
-position = Vector2(565, 982)
-scale = Vector2(1.764, 1.764)
+position = Vector2(540, 960)
+scale = Vector2(1.8, 1.8)
 texture = ExtResource("4_x0ag4")
 
-[node name="Button5" type="Button" parent="Sprite2D"]
+[node name="Button5" type="Button" parent="GUI/Clickers/duza stopa"]
 offset_left = 72.0
 offset_top = -307.0
 offset_right = 252.0
@@ -107,7 +111,7 @@ rotation = 0.523598
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button6" type="Button" parent="Sprite2D"]
+[node name="Button6" type="Button" parent="GUI/Clickers/duza stopa"]
 offset_left = 135.0
 offset_top = -224.0
 offset_right = 266.0
@@ -116,7 +120,7 @@ rotation = 0.523598
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button7" type="Button" parent="Sprite2D"]
+[node name="Button7" type="Button" parent="GUI/Clickers/duza stopa"]
 offset_left = 219.0
 offset_top = -108.0
 offset_right = 293.0
@@ -125,12 +129,13 @@ rotation = 0.523598
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="obiad" type="Sprite2D" parent="."]
-position = Vector2(542, 984)
-scale = Vector2(0.404162, 0.404162)
+[node name="obiad" type="Sprite2D" parent="GUI/Clickers"]
+visible = false
+position = Vector2(540, 960)
+scale = Vector2(0.41, 0.41)
 texture = ExtResource("5_4kie4")
 
-[node name="Button5" type="Button" parent="obiad"]
+[node name="Button5" type="Button" parent="GUI/Clickers/obiad"]
 offset_left = 595.0
 offset_top = -517.0
 offset_right = 905.0
@@ -139,7 +144,7 @@ rotation = 1.57079
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button8" type="Button" parent="obiad"]
+[node name="Button8" type="Button" parent="GUI/Clickers/obiad"]
 offset_left = 522.068
 offset_top = -556.708
 offset_right = 911.068
@@ -148,7 +153,7 @@ rotation = 1.44339
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button9" type="Button" parent="obiad"]
+[node name="Button9" type="Button" parent="GUI/Clickers/obiad"]
 offset_left = -653.204
 offset_top = -551.759
 offset_right = -356.204
@@ -157,7 +162,7 @@ rotation = 0.785397
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button6" type="Button" parent="obiad"]
+[node name="Button6" type="Button" parent="GUI/Clickers/obiad"]
 offset_left = 722.0
 offset_top = -121.0
 offset_right = 1117.0
@@ -166,7 +171,7 @@ rotation = 1.309
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button7" type="Button" parent="obiad"]
+[node name="Button7" type="Button" parent="GUI/Clickers/obiad"]
 offset_left = -229.0
 offset_top = 159.0
 offset_right = 448.0
@@ -175,7 +180,7 @@ rotation = 2.09439
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[node name="Button10" type="Button" parent="obiad"]
+[node name="Button10" type="Button" parent="GUI/Clickers/obiad"]
 offset_left = -609.0
 offset_top = 567.0
 offset_right = -330.0
@@ -184,20 +189,20 @@ rotation = 2.31997
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
 
-[connection signal="pressed" from="3panie/Button" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="3panie/Button6" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="3panie/Button2" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="3panie/Button3" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="3panie/Button4" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="3panie/Button5" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="zerotwo/Button5" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="zerotwo/Button6" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="Sprite2D/Button5" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="Sprite2D/Button6" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="Sprite2D/Button7" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="obiad/Button5" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="obiad/Button8" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="obiad/Button9" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="obiad/Button6" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="obiad/Button7" to="." method="_on_stupka_pressed"]
-[connection signal="pressed" from="obiad/Button10" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/3panie/Button" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/3panie/Button6" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/3panie/Button2" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/3panie/Button3" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/3panie/Button4" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/3panie/Button5" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/zerotwo/Button5" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/zerotwo/Button6" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/duza stopa/Button5" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/duza stopa/Button6" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/duza stopa/Button7" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/obiad/Button5" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/obiad/Button8" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/obiad/Button9" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/obiad/Button6" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/obiad/Button7" to="." method="_on_stupka_pressed"]
+[connection signal="pressed" from="GUI/Clickers/obiad/Button10" to="." method="_on_stupka_pressed"]

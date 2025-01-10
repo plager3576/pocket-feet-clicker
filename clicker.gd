@@ -2,14 +2,32 @@ extends Node2D
 
 var stopy = 0
 
-# Called when the node enters the scene tree for the first time.
+
+var clickers = []
 func _ready() -> void:
-	pass # Replace with function body.
+	var temp = $GUI/Clickers.get_children()
+	for child in temp:
+		clickers.append([child, 0])
+	print(clickers)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+var change_image = 0
 func _process(delta: float) -> void:
-	pass
+	if change_image <= 0:
+		change_image = 10
+		for x in $GUI/Clickers.get_children():
+			x.hide()
+		for va in clickers:
+			va[1] -= 1
+		var ndone = true
+		while ndone:
+			var los = randi_range(0, clickers.size() - 1)
+			if clickers[los][1] <= 0:
+				ndone = false
+				clickers[los][0].show()
+				clickers[los][1] = 3
+	else:
+		change_image -= delta
 
 
 
