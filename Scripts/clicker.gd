@@ -8,7 +8,6 @@ func _ready() -> void:
 	var temp = $GUI/Clickers.get_children()
 	for child in temp:
 		clickers.append([child, 0])
-	print(clickers)
 
 
 var change_image = 0

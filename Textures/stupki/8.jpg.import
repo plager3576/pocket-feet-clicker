@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1rpwgampa1ar"
-path="res://.godot/imported/5.jpg-fe7ec3114a9448c821f3653dcfa9cf5b.ctex"
+uid="uid://1ivma7x2t4xg"
+path="res://.godot/imported/8.jpg-c3b6a5a375c728260e654448815a9b44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stupki/5.jpg"
-dest_files=["res://.godot/imported/5.jpg-fe7ec3114a9448c821f3653dcfa9cf5b.ctex"]
+source_file="res://Textures/stupki/8.jpg"
+dest_files=["res://.godot/imported/8.jpg-c3b6a5a375c728260e654448815a9b44.ctex"]
 
 [params]
 
