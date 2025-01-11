@@ -1,10 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://bawmi33r55l45"]
+[gd_scene load_steps=12 format=3 uid="uid://bawmi33r55l45"]
 
 [ext_resource type="Script" path="res://Scripts/clicker.gd" id="1_x8ljh"]
-[ext_resource type="Texture2D" uid="uid://cgcmngfydsao7" path="res://Textures/stupki/1.jpg" id="2_q4snl"]
+[ext_resource type="Texture2D" uid="uid://1lgkksujpfjp" path="res://Textures/stupki/1.png" id="2_1xogi"]
 [ext_resource type="Texture2D" uid="uid://bx2hur4ibvnre" path="res://Textures/stupki/3.jpg" id="3_7kcog"]
 [ext_resource type="Texture2D" uid="uid://y481e1xwfitt" path="res://Textures/stupki/4.png" id="4_xnk5a"]
 [ext_resource type="Texture2D" uid="uid://cwaebpgtw0uu4" path="res://Textures/stupki/7.jpg" id="5_phlq8"]
+[ext_resource type="Texture2D" uid="uid://drn21ichwq3gs" path="res://Textures/stupki/2.png" id="6_qk7t8"]
+[ext_resource type="Texture2D" uid="uid://b1rpwgampa1ar" path="res://Textures/stupki/5.jpg" id="7_svkdw"]
+[ext_resource type="Texture2D" uid="uid://dqbuy1ub7fl0o" path="res://Textures/stupki/6.jpg" id="8_wlkxh"]
+[ext_resource type="Texture2D" uid="uid://bhy6o3r7f7ok3" path="res://Textures/stupki/9.jpg" id="9_5biob"]
+[ext_resource type="Texture2D" uid="uid://1ivma7x2t4xg" path="res://Textures/stupki/8.jpg" id="10_hwe4p"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6roog"]
 
@@ -19,7 +24,7 @@ script = ExtResource("1_x8ljh")
 visible = false
 position = Vector2(540, 960)
 scale = Vector2(0.26, 0.26)
-texture = ExtResource("2_q4snl")
+texture = ExtResource("2_1xogi")
 
 [node name="Button" type="Button" parent="GUI/Clickers/3panie"]
 offset_left = 483.0
@@ -103,6 +108,7 @@ scale = Vector2(1.8, 1.8)
 texture = ExtResource("4_xnk5a")
 
 [node name="Button5" type="Button" parent="GUI/Clickers/duza stopa"]
+visible = false
 offset_left = 72.0
 offset_top = -307.0
 offset_right = 252.0
@@ -188,6 +194,35 @@ offset_bottom = 1031.0
 rotation = 2.31997
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6roog")
 flat = true
+
+[node name="ksiazka" type="Sprite2D" parent="GUI/Clickers"]
+visible = false
+position = Vector2(542.25, 982.955)
+scale = Vector2(1.13636, 1.13636)
+texture = ExtResource("6_qk7t8")
+
+[node name="sos sojowy" type="Sprite2D" parent="GUI/Clickers"]
+visible = false
+position = Vector2(533, 944)
+texture = ExtResource("7_svkdw")
+
+[node name="znowu 3stopy" type="Sprite2D" parent="GUI/Clickers"]
+visible = false
+position = Vector2(538, 946)
+scale = Vector2(1.6244, 1.6244)
+texture = ExtResource("8_wlkxh")
+
+[node name="kompiel" type="Sprite2D" parent="GUI/Clickers"]
+visible = false
+position = Vector2(547.5, 1055.84)
+scale = Vector2(1.10505, 1.10505)
+texture = ExtResource("9_5biob")
+
+[node name="tights" type="Sprite2D" parent="GUI/Clickers"]
+visible = false
+position = Vector2(591, 1018)
+scale = Vector2(0.213892, 0.213892)
+texture = ExtResource("10_hwe4p")
 
 [connection signal="pressed" from="GUI/Clickers/3panie/Button" to="." method="_on_stupka_pressed"]
 [connection signal="pressed" from="GUI/Clickers/3panie/Button6" to="." method="_on_stupka_pressed"]
