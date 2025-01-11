@@ -2,7 +2,6 @@ extends Node2D
 
 var stopy = 0
 
-
 var clickers = []
 func _ready() -> void:
 	var temp = $GUI/Clickers.get_children()
@@ -27,7 +26,6 @@ func _process(delta: float) -> void:
 				clickers[los][1] = 3
 	else:
 		change_image -= delta
-
 
 
 func _on_stupka_pressed() -> void:
